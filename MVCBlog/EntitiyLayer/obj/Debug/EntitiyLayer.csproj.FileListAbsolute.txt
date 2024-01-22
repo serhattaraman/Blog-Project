@@ -1,0 +1,12 @@
+C:\Users\SERHAT\source\repos\MVCBlog\EntitiyLayer\bin\Debug\EntitiyLayer.dll.config
+C:\Users\SERHAT\source\repos\MVCBlog\EntitiyLayer\bin\Debug\EntitiyLayer.dll
+C:\Users\SERHAT\source\repos\MVCBlog\EntitiyLayer\bin\Debug\EntitiyLayer.pdb
+C:\Users\SERHAT\source\repos\MVCBlog\EntitiyLayer\bin\Debug\EntityFramework.dll
+C:\Users\SERHAT\source\repos\MVCBlog\EntitiyLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SERHAT\source\repos\MVCBlog\EntitiyLayer\bin\Debug\EntityFramework.xml
+C:\Users\SERHAT\source\repos\MVCBlog\EntitiyLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SERHAT\source\repos\MVCBlog\EntitiyLayer\obj\Debug\EntitiyLayer.csproj.AssemblyReference.cache
+C:\Users\SERHAT\source\repos\MVCBlog\EntitiyLayer\obj\Debug\EntitiyLayer.csproj.CoreCompileInputs.cache
+C:\Users\SERHAT\source\repos\MVCBlog\EntitiyLayer\obj\Debug\EntitiyLayer.csproj.CopyComplete
+C:\Users\SERHAT\source\repos\MVCBlog\EntitiyLayer\obj\Debug\EntitiyLayer.dll
+C:\Users\SERHAT\source\repos\MVCBlog\EntitiyLayer\obj\Debug\EntitiyLayer.pdb
