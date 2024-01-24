@@ -120,6 +120,16 @@ namespace MVCBlog.Controllers
 
             return View(BlogListByCategory);
         }
+        public ActionResult AdminBlogList()
+        {
+
+            var bloglist = bm.GetAll();
+            return View(bloglist);
+        }
+        public ActionResult AddNewBlog()
+        {
+               return View(); ;
+        }
 
     }
 }
