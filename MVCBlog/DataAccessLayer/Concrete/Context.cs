@@ -19,7 +19,9 @@ namespace DataAccessLayer.Concrete
         public DbSet<Concat> Concats { get; set; }
         public DbSet<SubscribeMail> SubmitsMails { get; set; }
 
-
-
+        internal int SaveChanges<T>(T p) where T : class
+        {
+            throw new NotImplementedException();
+        }
     }
 }

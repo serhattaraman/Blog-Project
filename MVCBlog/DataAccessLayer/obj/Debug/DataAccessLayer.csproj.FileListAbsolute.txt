@@ -17,3 +17,5 @@ C:\Users\SERHAT\source\repos\MVCBlog\DataAccessLayer\obj\Debug\DataAccessLayer.M
 C:\Users\SERHAT\source\repos\MVCBlog\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
 C:\Users\SERHAT\source\repos\MVCBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig2.resources
 C:\Users\SERHAT\source\repos\MVCBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig3.resources
+C:\Users\SERHAT\source\repos\MVCBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig4.resources
+C:\Users\SERHAT\source\repos\MVCBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig5.resources

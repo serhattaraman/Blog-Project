@@ -27,6 +27,11 @@ namespace MVCBlog.Controllers
             cm.BlConcatAdd(p);
             return View();
         }
+        public ActionResult SendBox()
+        {
+            return View();
+        }
+
 
     }
 }

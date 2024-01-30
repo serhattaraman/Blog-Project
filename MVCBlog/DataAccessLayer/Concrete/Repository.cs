@@ -10,7 +10,7 @@ using EntitiyLayer.Concrete;
 
 namespace DataAccessLayer.Concrete
 {
-    public class Repository<T>:IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class
     {
         Context c = new Context();
         DbSet<T> _object;
@@ -22,7 +22,7 @@ namespace DataAccessLayer.Concrete
         }
         public List<T> List()
         {
-           return _object.ToList();
+            return _object.ToList();
         }
 
         public int Insert(T p)
@@ -33,6 +33,7 @@ namespace DataAccessLayer.Concrete
 
         public int Update(T p)
         {
+
             return c.SaveChanges();
         }
 
@@ -49,7 +50,12 @@ namespace DataAccessLayer.Concrete
 
         public List<T> List(Expression<Func<T, bool>> filter)
         {
-           return _object.Where(filter).ToList();
+            return _object.Where(filter).ToList();
+        }
+
+        public T Find(Expression<Func<T, bool>> where)
+        {
+            return _object.FirstOrDefault(where);
         }
 
         public static implicit operator Repository<T>(Repository<Author> v)

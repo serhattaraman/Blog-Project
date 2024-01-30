@@ -11,6 +11,7 @@ namespace BusinessLayer.Concrete
     public class CategoryManager
     {
         Repository<Category> repocategory=new Repository<Category>();
+
         public List<Category> GetAll()
         {
             return repocategory.List();

@@ -25,10 +25,10 @@
             <td>@item.BlogTitle</td>
             <td>@item.Category.CategoryName</td>
             <td>@item.BlogDate</td>
-            <td><a href="" class="btn btn-danger">Sil</a></td>
-            <td><a href="" class="btn btn-success">Güncelle</a></td>
-            <td><a href="" class="btn btn-warning">Detaylar</a></td>
-            <td><a href="" class="btn btn-dark">Yorumlar</a></td>
+            <td><a href="/Blog/DeleteBlog/@item.BlogId" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Blog/UpdateBlog/@item.BlogId" class="btn btn-success">Güncelle</a></td>
+            <td><a href="/Blog/BlogDetails/@item.BlogId" class="btn btn-warning">Detaylar</a></td>
+            <td><a href="/Blog/GetCommentByBlog/@item.BlogId" class="btn btn-dark">Yorumlar</a></td>
 
         </tr>
     }
@@ -36,4 +36,4 @@
 
 </table>
 
-<a href="" class="btn btn-primary">Yeni Blog Ekle</a>
+<a href="/Blog/AddNewBlog/" class="btn btn-primary">Yeni Blog Ekle</a>

@@ -22,7 +22,7 @@ namespace MVCBlog.Controllers
         public PartialViewResult LeaveComment(int id)
         {
             ViewBag.id = id;
-            return PartialView(); 
+            return PartialView();
 
         }
         [HttpPost]
@@ -30,9 +30,30 @@ namespace MVCBlog.Controllers
         {
             cm.CommentAdd(c);
             return PartialView();
-
-
         }
+
+        public ActionResult AddminCommentListTrue()
+        {
+            var commentlist = cm.CommentByStatusTrue();
+            return View(commentlist);
+        }
+        public ActionResult AddminCommentListFalse()
+        {
+            var commentlist = cm.CommentByStatusFalse();
+            return View(commentlist);
+        }
+
+        public ActionResult StatuesChangeToFalse(int id)
+        {
+            cm.CommentStatusChangeToFalse(id);
+            return RedirectToAction("AddminCommentListTrue");
+        }
+        public ActionResult StatuesChangeToTrue(int id)
+        {
+            cm.CommentStatusChangeToTrue(id);
+            return RedirectToAction("AddminCommentListFalse");
+        }
+
 
 
     }

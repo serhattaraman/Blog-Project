@@ -20,7 +20,16 @@ namespace BusinessLayer.Concrete
         {
             return repocomment.List(x => x.BlogId == id);
         }
+        public List<Comment> CommentByStatusTrue()
+        {
+            return repocomment.List(x => x.CommentStatus == true);
+        }
 
+        //Pasif yorumları geitrme
+        public List<Comment> CommentByStatusFalse()
+        {
+            return repocomment.List(x => x.CommentStatus == false);
+        }
 
         public int CommentAdd(Comment c)
         {
@@ -30,5 +39,22 @@ namespace BusinessLayer.Concrete
             }
             return repocomment.Insert(c);
         }
+
+        public int CommentStatusChangeToFalse(int id)
+        {
+            Comment comment = repocomment.Find(x => x.CommentId == id);
+            comment.CommentStatus = false;
+
+            return repocomment.Update(comment);
+
+        }
+        public int CommentStatusChangeToTrue(int id)
+        {
+            Comment comment = repocomment.Find(x => x.CommentId == id);
+            comment.CommentStatus = true;
+
+            return repocomment.Update(comment);
+        }
     }
 }
+    
